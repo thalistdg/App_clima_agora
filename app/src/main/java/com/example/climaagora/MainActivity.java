@@ -137,11 +137,13 @@ public class MainActivity extends AppCompatActivity {
                                         double feelslike = jsonObjectMain.getDouble("feels_like");
                                         int humidity = jsonObjectMain.getInt("humidity");
                                         String local = jsonResponse.getString("name");
+                                        JSONObject jsonObjectClouds = jsonResponse.getJSONObject("clouds");
+                                        int clouds = jsonObjectClouds.getInt("all");
 
                                         txtLocation.setText(local);
 
                                         output = temp + "°C\n"
-                                                + description + "\n"
+                                                + description + " - " + clouds + "% de nebulosidade\n"
                                                 + "Sensação térmica: " + feelslike + "°C\n"
                                                 + "Máxima: " + temp_max + "°C\n"
                                                 + "Mínima: " + temp_min + "°C\n"
