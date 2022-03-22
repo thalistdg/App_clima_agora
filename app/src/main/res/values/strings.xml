@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Clima agora</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="latitude">Latitude:</string>
+    <string name="latitude_longitude" />
+    <string name="latitude_e_longitude">latitude e longitude</string>
+    <string name="clima_agora">Clima Agora</string>
+    <string name="buscar">Buscar</string>
+</resources>
